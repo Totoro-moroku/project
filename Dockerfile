@@ -7,8 +7,10 @@ COPY . /app
 
 RUN pip install --upgrade pip
 
-RUN pip install Flask
+RUN pip install Flask==2.0.3
+RUN pip install graphene==2.1.6
+RUN pip install Flask-GraphQL==2.0.0
+RUN pip install PyMySQL
 
-RUN pip install -U PyMySQL
 
 CMD ["python3","index.py"]

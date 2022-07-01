@@ -15,7 +15,7 @@ services:
   flask:
     build: .
     ports:
-      - '5005:80'
+      - '5005:5000'
     networks:
       - app-net
     volumes:
